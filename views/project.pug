@@ -8,38 +8,42 @@ block content
       |  Back
 
   article.portfolio-projects
-    .inner-wrapper.flex-row-wrap.two-col
-      .project-info-box.box
 
-        //- Use the info in your data file and the comments below to complete this template
+    if !foundProject
+      .inner-wrapper.flex-row-wrap.two-col
+        .project-info-box.box
+          h1= `No such project found - project id "${id}"`        
+    else
+      .inner-wrapper.flex-row-wrap.two-col
 
-        //- Use interpolation to dynamically add the project title
-        h1 Project Name
+        .project-info-box.box
 
-        //- Use interpolation to dynamically add the project description
-        p Description
+          //- Use the info in your data file and the comments below to complete this template
 
-      .project-tech-links-box.box
-        h6 Technologies
-        ul
+          //- Use interpolation to dynamically add the project title
+          h1= foundProject.Name
 
-          //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-          li HTML
-          li CSS
-          li JavaScript
+          //- Use interpolation to dynamically add the project description
+          p= foundProject.description
 
-        //- Add the href values to the links below
-        a.btn-link(href='') Live Demo
-        a.btn-link(href='') GitHub Repo
+        .project-tech-links-box.box
+          h6 Technologies
+          ul
+            each val in foundProject.technologies
+              li= val
 
-    .project-img-box.box
 
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-      img.project-img(src='https://placehold.it/1200x550', alt='')
-      img.project-img(src='https://placehold.it/1200x550', alt='')
-      img.project-img(src='https://placehold.it/1200x550', alt='')
+          //- Add the href values to the links below
+          a.btn-link(href=`${foundProject.urlLink}`, target="_blank") Live Demo
+          a.btn-link(href=`${foundProject.githubLink}`, target="_blank") GitHub Repo
 
-    nav.nav
-      a(href='/')
-        span &larr;
-        |  Back
+      .project-img-box.box
+        each img in foundProject.imgUrl.large
+          img.project-img(src=`../img/portfolio/${img}`, alt=`Screenshot of project: ${Name}`)
+      
+
+
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back

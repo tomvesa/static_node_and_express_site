@@ -3,26 +3,20 @@ extends layout.pug
 block content
 
   article.portfolio-intro
-
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 Heading
-
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
+    h1 Porfolio of Tomvesa
+    p.
+     This project extends the portfolio page I created as the final project of Frontend developer 
+     Techdegree course at Treehous.
+     This time focusing on JavaScript usage on the backend using Nodejs, Express.js and Pug for page
+     templating.
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
-      
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
-
+      each val in projects
         .cell
-          a(href='#')
-            img.thumbnail(src='https://placehold.it/550x550', alt='')
-            h5 My Site
+          a(href=`/project/${val.id}`)
+            img(class='thumbnail' src=`/img/portfolio/${val.imgUrl.thumbnail}`)
+            h5= `${val.Name}`
 

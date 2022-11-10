@@ -179,6 +179,17 @@ nav a span {
   color: #555;
 }
 
+.sidebar .logo-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.sidebar .logo {
+  width: 100%;
+  max-width: 100px;
+}
+
 .header {
   vertical-align: middle;
   color: #fefefe;
@@ -298,6 +309,12 @@ nav a span {
   padding: 0.85em 1em;
   background-color: #333;
   border: 1px solid transparent;
+  transition: transform .2s;
+}
+
+.btn-link:hover {
+      transform: scale(1.05);
+
 }
 
 
