@@ -14,7 +14,7 @@ app.use(projectRoutes);
 
 // 404 error 
 app.use((req, res, next) =>{
-    const err = new Error("The page you are lookng for does not exist");
+    const err = new Error("The page you are looking for does not exist");
     err.status = 404;
     err.messageTitle = "No such page here :("
     next(err);
