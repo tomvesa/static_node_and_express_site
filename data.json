@@ -5,7 +5,7 @@
                       "description" : "First proper usage of Javascript to create an interactive game - a browser version of “Wheel of Success”. A quotation guessing game. A random phrase to be guessed by players using a browser keyboard.",
                       
                       "technologies" : ["HTML", "CSS", "Javascript"],
-                      "githubLink" : "https://github.com/tomvesa/Quot-generator.git",
+                      "github_link" : "https://github.com/tomvesa/Quot-generator.git",
                       "live_link" : "http://tomvesa.cz/game",
                       "image_urls" : {
                         "thumbnail" : "screenshot_20221106_225512.png",
@@ -31,7 +31,7 @@
                         "description" : "Mobile-friendly registrtion form using css. Getting familiar with different input type fields. To enhance UX the placeholders were used and athere different css atrubutes like focus, required, transition...",
                         
                         "technologies" : ["HTML", "CSS"],
-                        "githubLink" : "https://github.com/tomvesa/interactive-form-v3.git",
+                        "github_link" : "https://github.com/tomvesa/interactive-form-v3.git",
                         "live_link" : "http://tomvesa.cz/form"  ,
                         "image_urls" : {
                           "thumbnail" : "form-thumb.png",
@@ -44,7 +44,7 @@
                           "description" : "In this project we focused on the usage of the Javascript to get information from third party source using API. From the fetched data we created HTML elements to display List of employee, detail of an employee and move from one Employee card to another.</br>Information fetched from a API was processed to create DOM elements. Interactivity allows to display person's contact information. A search box search through display data while typing reducing displayed information.",
                           
                           "technologies" : ["HTML", "CSS", "Javascript"],
-                          "githubLink" : "https://github.com/tomvesa/project8.git",
+                          "github_link" : "https://github.com/tomvesa/project8.git",
                           "live_link" : "http://tomvesa.cz/employees"  ,
                           "image_urls" : {
                             "thumbnail" : "employees-thumb.png",
@@ -57,7 +57,7 @@
                             "description" : "In this lesson we were introduced to SASS, this was very exciting to use all these variables. We were provided with full HTML and CSS files. Our task here was to create the style guide page using SASS. Also we were to use Git version control system for the first time.",
                             
                             "technologies" : ["HTML", "CSS", "SASS"],
-                            "githubLink" : "https://github.com/tomvesa/project4-style-guide.git",
+                            "github_link" : "https://github.com/tomvesa/project4-style-guide.git",
                             "live_link" : "http://tomvesa.cz/style-guide"  ,
                             "image_urls" : {
                               "thumbnail" : "styleguide-thumb.png",
