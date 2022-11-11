@@ -7,9 +7,9 @@
             },
             "phone" : "+1141731912985",
             "email" : "thisismyemail@email.test",
-            "linkedinUrl" : "",
+            "linkedinUrl" : "https://linkedin.com",
             "githubUrl" : "https://github.com/tomvesa/",
-            "twitterUrl" : "",
+            "twitterUrl" : "https://twitter.com",
             "title" : "Full-Stack Javascript Developer student",
             "aboutUser" : "This is my second Techdegree course at Teamtreehouse. Extending my first degree Frontend-Web Developer. This time focusing on Full-Stack Javascript."
 
