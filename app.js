@@ -26,11 +26,14 @@ app.use((err, req, res, next) => {
     }
 
     if(err.status === 404){
-        res.status(404).render('page-not-found', { err });
+        res.status(404);
+        console.log(err.status);
+        console.log(err.stack);
+        res.render('page-not-found', { err });
     } else {
         
        err.messageTitle = "OOPS this is wrong"
-       err.status = res.statusCode || 500;
+       err.status = res.statusCode === 200 ? 500 : res.statusCode;
        console.log(err.status);
        console.log(err.stack);
        res.render('error', { err });
