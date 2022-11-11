@@ -17,6 +17,7 @@ router.get("/project/:id", (req, res) => {
             res.render("project", { foundProject });
         }else{
             // sending id without project to template pug
+            console.log(`Project of ID "${id}" was not found`);
             res.render("project", {  id });
         }
 });
