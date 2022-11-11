@@ -26,14 +26,12 @@ block content
             each val in foundProject.technologies
               li= val
 
-
-          //- Add the href values to the links below
-          a.btn-link(href=`${foundProject.urlLink}`, target="_blank") Live Demo
-          a.btn-link(href=`${foundProject.githubLink}`, target="_blank") GitHub Repo
+          a.btn-link(href=`${foundProject.live_link}`, target="_blank") Live Demo
+          a.btn-link(href=`${foundProject.github_link}`, target="_blank") GitHub Repo
 
       .project-img-box.box
         each img in foundProject.image_urls.large
-          img.project-img(src=`../img/portfolio/${img}`, alt=`Screenshot of project: ${Name}`)
+          img.project-img(src=`../img/portfolio/${img}`, alt=`Screenshot of project: ${project_name}`)
       
 
 
