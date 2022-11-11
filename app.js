@@ -28,8 +28,13 @@ app.use((err, req, res, next) => {
     if(err.status === 404){
         res.status(404).render('page-not-found', { err });
     } else {
+        
        err.messageTitle = "OOPS this is wrong"
-        res.status(err.status || 500).render('error', { err });
+       err.status = res.statusCode || 500;
+       console.log(err.status);
+       console.log(err.stack);
+       res.render('error', { err });
+
     }
 })
  
