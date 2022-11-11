@@ -17,13 +17,7 @@ block content
       .inner-wrapper.flex-row-wrap.two-col
 
         .project-info-box.box
-
-          //- Use the info in your data file and the comments below to complete this template
-
-          //- Use interpolation to dynamically add the project title
-          h1= foundProject.Name
-
-          //- Use interpolation to dynamically add the project description
+          h1= foundProject.project_name
           p= foundProject.description
 
         .project-tech-links-box.box
@@ -38,7 +32,7 @@ block content
           a.btn-link(href=`${foundProject.githubLink}`, target="_blank") GitHub Repo
 
       .project-img-box.box
-        each img in foundProject.imgUrl.large
+        each img in foundProject.image_urls.large
           img.project-img(src=`../img/portfolio/${img}`, alt=`Screenshot of project: ${Name}`)
       
 
